@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android2="http://schemas.android.com/apk/res/android"
+    android2:layout_height="match_parent"
+    android2:layout_width="match_parent"
+    android2:background="@color/colorPrimary">
+
+
+    <TableRow
+        android2:gravity="center"
+        android2:layout_width="match_parent"
+        android2:layout_height="match_parent"
+        android2:layout_weight="1">
+
+    <TextView
+        android2:textStyle="bold|italic"
+        android2:textColor="@color/colorAccent"
+        android2:textSize="@dimen/txtTitle"
+        android2:gravity="center"
+        android2:text="HangMan"
+        android2:id="@+id/txtTitle"
+        android2:layout_column="0" />
+    </TableRow>
+
+    <TableRow
+        android2:background="@color/colorPrimaryDark"
+        android2:gravity="center"
+        android2:layout_width="match_parent"
+        android2:layout_height="match_parent"
+        android2:layout_weight="1">
+
+    <TextView
+        android2:textColor="@color/colorAccent"
+        android2:textSize="@dimen/txtGUESSTHEWORD"
+        android2:gravity="center"
+        android2:text="My Word"
+        android2:id="@+id/txtGUESSTHEWORD"
+        android2:layout_column="0" />
+    </TableRow>
+
+    <TableRow
+        android2:gravity="center"
+        android2:layout_width="match_parent"
+        android2:layout_height="match_parent"
+        android2:layout_weight="1">
+
+        <EditText
+            android2:maxLength="1"
+            android2:textStyle="italic"
+            android2:textColor="@color/colorASecondary"
+            android2:textColorHint="@color/colorASecondary"
+            android2:textSize="@dimen/edtInput"
+            android2:gravity="center"
+            android2:id="@+id/edtInput"
+            android2:hint="Input one Letter"
+            android2:layout_column="0"/>
+    </TableRow>
+
+    <TableRow
+        android2:gravity="center"
+        android2:layout_width="match_parent"
+        android2:layout_height="match_parent"
+        android2:layout_weight="1">
+
+    <TextView
+        android2:textColor="@color/colorAccent"
+        android2:textSize="@dimen/txtLettersUse"
+        android2:gravity="center"
+        android2:text="Letters tried:"
+        android2:id="@+id/txtLettersUse"
+        android2:layout_column="0" />
+
+    </TableRow>
+
+    <TableRow
+        android2:background="@color/colorPrimaryDark"
+        android2:gravity="center"
+        android2:layout_width="match_parent"
+        android2:layout_height="match_parent"
+        android2:layout_weight="1"
+        android2:id="@+id/trTriesLeft">
+
+    <TextView
+        android2:textStyle="bold"
+        android2:textColor="@color/colorAccent"
+        android2:textSize="@dimen/txtTriesLeft"
+        android2:gravity="center"
+        android2:text=" X X X X X"
+        android2:id="@+id/txtTriesLeft"
+        android2:layout_column="0" />
+    </TableRow>
+
+    <TableRow
+        android2:id="@+id/trReset"
+        android2:layout_width="371dp"
+        android2:layout_height="match_parent"
+        android2:layout_weight="1"
+        android2:gravity="center">
+
+
+        <Button
+            android2:id="@+id/btnReset"
+            android2:layout_width="375dp"
+            android2:layout_height="match_parent"
+            android2:layout_column="0"
+            android2:layout_weight="1"
+            android2:background="@color/colorASecondary"
+            android2:onClick="resetGame"
+            android2:text="Reset"
+            android2:textColor="@color/colorPrimaryDark"
+            android2:textSize="30dp" />
+
+        <Button
+            android2:id="@+id/btnResult"
+            android2:layout_width="375dp"
+            android2:layout_height="match_parent"
+            android2:layout_column="0"
+            android2:layout_weight="1"
+            android2:background="@color/colorASecondary"
+            android2:onClick="resultGame"
+            android2:text="Result"
+            android2:textColor="@color/colorPrimaryDark"
+            android2:textSize="30dp" />
+
+    </TableRow>
+
+    </TableLayout>
+
